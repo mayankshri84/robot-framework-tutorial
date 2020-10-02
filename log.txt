@@ -1,0 +1,13 @@
+==============================================================================
+Datadriverwithexcel                                                           
+==============================================================================
+LoginTestWithExcel using ${username} ${password}                      | FAIL |
+Test case contains no keywords.
+------------------------------------------------------------------------------
+Datadriverwithexcel                                                   | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\robotframework-workspace\robot-framework-tutorial\output.xml
+Log:     C:\robotframework-workspace\robot-framework-tutorial\log.html
+Report:  C:\robotframework-workspace\robot-framework-tutorial\report.html

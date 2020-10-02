@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.5.4 on win32)" generated="20201002 03:45:32.967" rpa="false">
+<suite name="Datadriverwithexcel" id="s1" source="C:\robotframework-workspace\robot-framework-tutorial\data-driven\datadriverwithexcel.robot">
+<kw name="Open url in browser" type="setup" library="adminloginpage">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${browser}</arg>
+<arg>executable_path=C:\\drivers\\chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20201002 03:45:34.264" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status endtime="20201002 03:45:38.187" starttime="20201002 03:45:34.264" status="PASS"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20201002 03:45:38.187" level="INFO">Opening url 'https://admin-demo.nopcommerce.com/'</msg>
+<status endtime="20201002 03:45:41.462" starttime="20201002 03:45:38.187" status="PASS"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status endtime="20201002 03:45:43.657" starttime="20201002 03:45:41.463" status="PASS"></status>
+</kw>
+<status endtime="20201002 03:45:43.658" starttime="20201002 03:45:34.249" status="PASS"></status>
+</kw>
+<test name="invalid using" id="s1-t1">
+<kw name="Invalid scenario">
+<arguments>
+<arg>${username}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20201002 03:45:43.667" level="FAIL">Variable '${username}' not found.</msg>
+<status endtime="20201002 03:45:43.667" starttime="20201002 03:45:43.665" status="FAIL"></status>
+</kw>
+<status endtime="20201002 03:45:43.667" starttime="20201002 03:45:43.659" status="FAIL" critical="yes">Variable '${username}' not found.</status>
+</test>
+<kw name="Close my browser" type="teardown" library="adminloginpage">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status endtime="20201002 03:45:46.019" starttime="20201002 03:45:43.667" status="PASS"></status>
+</kw>
+<status endtime="20201002 03:45:46.019" starttime="20201002 03:45:43.667" status="PASS"></status>
+</kw>
+<status endtime="20201002 03:45:46.019" starttime="20201002 03:45:32.983" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Datadriverwithexcel">Datadriverwithexcel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201002 03:45:34.249" level="ERROR">Error in file 'C:\robotframework-workspace\robot-framework-tutorial\data-driven\datadriverwithexcel.robot' on line 4: Importing test library 'DataDriver ../testdata/testdata.xlsx' failed: ImportError: No module named 'DataDriver '
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Mayank\PycharmProjects\robot-framework-tutorial\venv\Scripts\robot.exe
+  C:\Users\Mayank\PycharmProjects\robot-framework-tutorial\venv\Scripts
+  c:\users\mayank\pycharmprojects\robot-framework-tutorial\venv\scripts\python35.zip
+  C:\Users\Mayank\AppData\Local\Programs\Python\Python35\DLLs
+  C:\Users\Mayank\AppData\Local\Programs\Python\Python35\lib
+  C:\Users\Mayank\AppData\Local\Programs\Python\Python35
+  c:\users\mayank\pycharmprojects\robot-framework-tutorial\venv
+  c:\users\mayank\pycharmprojects\robot-framework-tutorial\venv\lib\site-packages
+  c:\users\mayank\pycharmprojects\robot-framework-tutorial\venv\lib\site-packages\setuptools-40.8.0-py3.5.egg
+  c:\users\mayank\pycharmprojects\robot-framework-tutorial\venv\lib\site-packages\pip-19.0.3-py3.5.egg</msg>
+</errors>
+</robot>

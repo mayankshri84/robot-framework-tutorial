@@ -15,6 +15,8 @@ Wrong username empty password   adm@yourstore.com         ${EMPTY}
 *** Keywords ***
 Invalid scenario
     [Arguments]    ${username}  ${password}
+    set selenium implicit wait    10
+    set selenium speed    3
     Type username  ${username}
     Type password  ${password}
     Click on loginButton

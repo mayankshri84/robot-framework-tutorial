@@ -17,6 +17,14 @@ Invalid scenario
     [Arguments]    ${username}  ${password}
     set selenium implicit wait    10
     set selenium speed    3
+    select from list by value
+    select radio button
+    select checkbox
+    #right click on loginbutton
+    open context menu
+    #double click element
+    drag and drop       id:souce    id:target
+    handle alert    accept,leave
     Type username  ${username}
     Type password  ${password}
     Click on loginButton
